@@ -1,0 +1,94 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__burger-img {}
+
+.header__menu-left {
+
+}
+
+.header__list-left {
+    display: flex;
+}
+
+.header__item-left {
+    margin: 0px 42px 0px 0px;
+    font-size: 1em;
+    color: #000;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.header__item-right:not(:last-child) {
+    margin: 0px 31px 0px 0px;
+}
+
+.header__item-right {
+}
+
+.header__link {
+    font-size: 1em;
+    color: #000;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.header__logo {
+    margin: 0px 220px 0px 220px;
+}
+
+.header__logo-img {
+    width: 139px;
+    height: 12px;
+}
+
+.header__menu-right { 
+}
+.header__list-right {
+    display: flex;
+}
+
+.header__link_gray {
+    font-size: 1em;
+    color: #808080;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #267df4;
+    margin-left: 30px;
+}
+
+.header__btn span {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.header-apple {
+    padding-right: 14px;
+}
