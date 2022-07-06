@@ -1,0 +1,413 @@
+/*-------------------------------------------------------------*/
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+/*-------------------------------------------------------------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    line-height: 1;
+    height: 100%;
+}
+ul,ol,li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+}
+/*-------------------------------------------------------------*/
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+[class*="_container"] {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+[class*="_back"] {
+    background-color: #f5f5f8;
+}
+/*-------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    [class*="_container"] {
+        max-width: 970px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .header__logo {
+        margin: 0px 125px 0px 125px;
+    }
+    .introduction__lock {
+        margin-right: 20px;
+    }
+    .map__world img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    .slider__arrow-right {
+        margin-left: 150px;
+    }
+    
+    .slider__arrow-left  {
+        margin-right: 150px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    [class*="_container"] {
+        max-width: 900px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .header__logo {
+        margin: 0px 100px 0px 100px;
+    }
+    .header-apple {
+        padding-right: 7px;
+    }
+    .introduction__lock {
+        margin-right: 20px;
+    }
+    .map__world img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    .choose__card-not-active {
+        display: none;
+    }
+    .slider__arrow-right {
+        margin-left: 150px;
+    }
+    .slider__arrow-left  {
+        margin-right: 150px;
+    }
+    .choose__btn-not-active {
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    [class*="_container"] {
+        max-width: 850px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header-apple {
+        padding-right: 7px;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__menu-left {
+        display: none;
+    }
+    .header__menu-right {
+        display: none;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .introduction__lock {
+        margin-right: 20px;
+    }
+    .protected__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .protected__phone {
+        display: none;
+    }
+    .protected__container {
+        justify-content: center;
+    }
+    .map__world {
+        display: none;
+    }
+    .map__container {
+        justify-content: center;
+    }
+    .choose__card-not-active {
+        display: none;
+    }
+    .slider__arrow-right {
+        margin-left: 55px;
+    }
+    
+    .slider__arrow-left  {
+        margin-right: 55px;
+    }
+    .choose__btn-not-active {
+        margin-bottom: 50px;
+    }
+    .newprovidense__learn {
+        margin-top: 50px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    [class*="_container"] {
+        max-width: 850px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header-apple {
+        padding-right: 7px;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__menu-left {
+        display: none;
+    }
+    .header__menu-right {
+        display: none;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .introduction__lock {
+        margin-right: 20px;
+    }
+    .introduction__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .introduction__text {
+        margin-bottom: 25px;
+    }
+    .introduction__div {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .introduction__alarm-ico img {
+        margin: 0px 0px 72px 0px;
+    }
+    .protected__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .protected__phone {
+        display: none;
+    }
+    .protected__container {
+        justify-content: center;
+    }
+    .map__world {
+        display: none;
+    }
+    .map__container {
+        justify-content: center;
+    }
+    .choose__container {
+        flex-wrap: wrap;
+    }
+    .choose__cards {
+       margin: 0 auto;
+    }
+    .choose__card-active {
+        margin: 50px 0px;
+    }
+    .choose__card-not-active {
+        display: none;
+    }
+    .slider__photo {
+        display: none;
+    }
+    .slider__photo-_main {
+        margin: 0px 55px;
+        display: block;
+    }
+    .slider__arrow-right {
+        margin-left: 55px;
+    }
+    .slider__arrow-left  {
+        margin-right: 55px;
+    }
+    .choose__btn-not-active {
+        margin-bottom: 50px;
+    }
+    .newprovidense__learn {
+        margin-top: 50px;
+    }
+    .newprovidense-more,.newprovidense__about,.newprovidense__support {
+        margin-right: 25px;
+    }
+    .footer__link {
+        display: none;
+    }
+    .footer__container {
+        justify-content: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    [class*="_container"] {
+        max-width: 850px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header-apple {
+        padding-right: 7px;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__menu-left {
+        display: none;
+    }
+    .header__menu-right {
+        display: none;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about__title {
+        font-size: 55px;
+    }
+    .about__button {
+        margin: 35px 0px 35px 0px;
+    }
+    .introduction__lock {
+        margin-right: 0px;
+    }
+    .introduction__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .introduction__text {
+        margin-bottom: 55px;
+    }
+    .introduction__div {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .introduction__lock-ico img {
+        margin: 50px 0px 72px 0px;  
+    }
+    .introduction__alarm-ico img {
+        margin: 10px 0px 72px 0px;
+    }
+    .protected__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .protected__phone {
+        display: none;
+    }
+    .protected__container {
+        justify-content: center;
+    }
+    .protected__btn {
+        flex-wrap: wrap;
+    }
+    .protected__try {
+        margin-bottom: 10px
+    }
+    .protected__learn {
+        margin-left: 5px;
+    }
+    .map__world {
+        display: none;
+    }
+    .map__container {
+        justify-content: center;
+    }
+    .map__text {
+        margin-bottom: 15px;
+    }
+    .map__logo-1 {
+        margin-bottom: 15px;
+    }
+    .map__logo-2 {
+        margin-bottom: 75px;
+    }
+    .beautiful__phones img {
+        max-width: 100%;
+    }
+    .choose__container {
+        flex-wrap: wrap;
+    }
+    .choose__cards {
+       margin: 0 auto;
+    }
+    .choose__card-active {
+        margin: 50px 0px;
+        width: 290px;
+    }
+    .choose__card-not-active {
+        display: none;
+    }
+    .get-it__button {
+        font-size: 14px;
+        width: 100px;
+    }
+    .get-it__arrow {
+        padding-left: 5px;
+    }
+    .slider__photo {
+        display: none;
+    }
+    .slider__photo-_main {
+        margin: 0px 15px;
+        display: block;
+    }
+    .slider__arrow-right {
+        margin-left: 35px;
+    }
+    .slider__arrow-left  {
+        margin-right: 35px;
+    }
+    .slider__stars {
+        margin: 100px 8px 68px;
+    }
+    .choose__btn-not-active {
+        margin-bottom: 50px;
+    }
+    .newprovidense__learn {
+        margin-top: 50px;
+        justify-content: space-between
+    }
+    .newprovidense__text {
+        display: none;
+    }
+    .newprovidense-more,.newprovidense__about,.newprovidense__support {
+        margin-right: 25px;
+    }
+    .footer__link {
+        display: none;
+    }
+    .footer__container {
+        justify-content: center;
+    }
+}
